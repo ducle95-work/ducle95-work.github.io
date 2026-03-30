@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "name": "1.png",
+      "path": "gallery/1.png"
+    },
+    {
+      "name": "2.png",
+      "path": "gallery/2.png"
+    },
+    {
+      "name": "3.png",
+      "path": "gallery/3.png"
+    }
+  ]
+}

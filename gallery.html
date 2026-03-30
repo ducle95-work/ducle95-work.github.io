@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duc Le's Image Gallery">
+    <title>Gallery - Duc Le</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/components.js" defer></script>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <main>
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Image Gallery</h2>
+
+                <!-- Controls -->
+                <div class="gallery-controls">
+                    <div class="gallery-search">
+                        <i class="fas fa-search"></i>
+                        <input id="gallery-search-input" type="text" placeholder="Filter images…" autocomplete="off">
+                    </div>
+                    <span class="gallery-count" id="gallery-count"></span>
+                </div>
+
+                <!-- Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <div class="gallery-loading">
+                        <i class="fas fa-circle-notch"></i>
+                        <p>Loading images…</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img id="lightbox-img" src="" alt="">
+        <span class="lightbox-name" id="lightbox-name"></span>
+        <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
+    </div>
+
+    <app-footer></app-footer>
+
+    <script>
+        /* ── Data ───────────────────────────────────────────── */
+        let allImages = [];
+        let filtered = [];
+        let currentIdx = 0;
+
+        /* ── Fetch manifest ─────────────────────────────────── */
+        async function loadGallery() {
+            const grid = document.getElementById('gallery-grid');
+
+            try {
+                const res = await fetch('gallery/images.json');
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                allImages = data.images || [];
+
+                if (allImages.length === 0) {
+                    grid.innerHTML = `
+                        <div class="gallery-empty" style="grid-column:1/-1">
+                            <i class="fas fa-images"></i>
+                            <p>No images found. Run <code>node generate-manifest.js</code> to update the list.</p>
+                        </div>`;
+                    return;
+                }
+
+                filtered = [...allImages];
+                renderGrid();
+                setupSearch();
+
+            } catch (err) {
+                grid.innerHTML = `
+                    <div class="gallery-error" style="grid-column:1/-1">
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <p>Could not load <code>images.json</code>.<br>
+                        Run <code>node generate-manifest.js</code> first, then refresh.</p>
+                    </div>`;
+                console.error(err);
+            }
+        }
+
+        /* ── Render ─────────────────────────────────────────── */
+        function renderGrid() {
+            const grid = document.getElementById('gallery-grid');
+            const count = document.getElementById('gallery-count');
+
+            count.textContent = `${filtered.length} / ${allImages.length} image${allImages.length !== 1 ? 's' : ''}`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="gallery-empty" style="grid-column:1/-1">
+                        <i class="fas fa-magnifying-glass"></i>
+                        <p>No images match your search.</p>
+                    </div>`;
+                return;
+            }
+
+            grid.innerHTML = filtered.map((img, i) => `
+                <div class="gallery-item" data-index="${i}" tabindex="0" role="button"
+                     aria-label="View ${img.name}">
+                    <img src="${img.path}" alt="${img.name}" loading="lazy"
+                         onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><span>${img.name}</span></div>
+                </div>
+            `).join('');
+
+            /* Click to open lightbox */
+            grid.querySelectorAll('.gallery-item').forEach(el => {
+                el.addEventListener('click', () => openLightbox(+el.dataset.index));
+                el.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') openLightbox(+el.dataset.index);
+                });
+            });
+        }
+
+        /* ── Search ─────────────────────────────────────────── */
+        function setupSearch() {
+            document.getElementById('gallery-search-input').addEventListener('input', function () {
+                const q = this.value.trim().toLowerCase();
+                filtered = q ? allImages.filter(img => img.name.toLowerCase().includes(q)) : [...allImages];
+                renderGrid();
+            });
+        }
+
+        /* ── Lightbox ───────────────────────────────────────── */
+        function openLightbox(idx) {
+            currentIdx = idx;
+            showLightboxImage();
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function showLightboxImage() {
+            const img = filtered[currentIdx];
+            document.getElementById('lightbox-img').src = img.path;
+            document.getElementById('lightbox-img').alt = img.name;
+            document.getElementById('lightbox-name').textContent = img.name;
+        }
+
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', e => {
+            if (e.target === e.currentTarget) closeLightbox();
+        });
+
+        document.getElementById('lightbox-prev').addEventListener('click', e => {
+            e.stopPropagation();
+            currentIdx = (currentIdx - 1 + filtered.length) % filtered.length;
+            showLightboxImage();
+        });
+
+        document.getElementById('lightbox-next').addEventListener('click', e => {
+            e.stopPropagation();
+            currentIdx = (currentIdx + 1) % filtered.length;
+            showLightboxImage();
+        });
+
+        document.addEventListener('keydown', e => {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') { currentIdx = (currentIdx - 1 + filtered.length) % filtered.length; showLightboxImage(); }
+            if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % filtered.length; showLightboxImage(); }
+        });
+
+        /* ── Init ───────────────────────────────────────────── */
+        loadGallery();
+    </script>
+</body>
+
+</html>
