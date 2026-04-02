@@ -1,0 +1,512 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": [
+        {
+          "alias": [
+            "fonts/Doto_Rounded-Regular.ttf"
+          ],
+          "src": [
+            "fonts/Doto_Rounded-Regular-pwyYGw.woff2"
+          ]
+        },
+        {
+          "alias": [
+            "fonts/Gluten-Regular.ttf"
+          ],
+          "src": [
+            "fonts/Gluten-Regular-MPnD.woff2"
+          ]
+        },
+        {
+          "alias": [
+            "fonts/PressStart2P-Regular.ttf"
+          ],
+          "src": [
+            "fonts/PressStart2P-Regular-KC3dTA.woff2"
+          ]
+        },
+        {
+          "alias": [
+            "images/circle.png"
+          ],
+          "src": [
+            "images/circle-0mklfw.png"
+          ]
+        },
+        {
+          "alias": [
+            "images/hexagon.png"
+          ],
+          "src": [
+            "images/hexagon-7SHV6A.png"
+          ]
+        },
+        {
+          "alias": [
+            "images/seamless.png"
+          ],
+          "src": [
+            "images/seamless-M4KZhA.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aseprite",
+      "assets": [
+        {
+          "alias": [
+            "aseprite/Adventure2D/Adventure2D.json"
+          ],
+          "src": [
+            "aseprite/Adventure2D/Adventure2D.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Adventure2D/Adventure2D.png"
+          ],
+          "src": [
+            "aseprite/Adventure2D/Adventure2D.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/background.jpg"
+          ],
+          "src": [
+            "aseprite/background.jpg"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/lightning_strike_001_large_violet.json"
+          ],
+          "src": [
+            "aseprite/effect/lightning_strike_001_large_violet.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/lightning_strike_001_large_violet.png"
+          ],
+          "src": [
+            "aseprite/effect/lightning_strike_001_large_violet.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_001_large_green.json"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_001_large_green.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_001_large_green.png"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_001_large_green.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_002_large_red.json"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_002_large_red.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_002_large_red.png"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_002_large_red.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_003_large_blue.json"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_003_large_blue.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/scifi_warp_003_large_blue.png"
+          ],
+          "src": [
+            "aseprite/effect/scifi_warp_003_large_blue.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/enemy/fire_totem.json"
+          ],
+          "src": [
+            "aseprite/enemy/fire_totem.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/enemy/fire_totem.png"
+          ],
+          "src": [
+            "aseprite/enemy/fire_totem.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/knight2d/knight2d.json"
+          ],
+          "src": [
+            "aseprite/knight2d/knight2d.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/knight2d/knight2d.png"
+          ],
+          "src": [
+            "aseprite/knight2d/knight2d.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/orc/Orc.json"
+          ],
+          "src": [
+            "aseprite/orc/Orc.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/orc/Orc.png"
+          ],
+          "src": [
+            "aseprite/orc/Orc.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/soldier/Soldier.json"
+          ],
+          "src": [
+            "aseprite/soldier/Soldier.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/soldier/Soldier.png"
+          ],
+          "src": [
+            "aseprite/soldier/Soldier.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/soldier-arrow.png"
+          ],
+          "src": [
+            "aseprite/soldier-arrow.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.json"
+          ],
+          "src": [
+            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.png"
+          ],
+          "src": [
+            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "assets": [
+        {
+          "alias": [
+            "icon/icon_arrow.png"
+          ],
+          "src": [
+            "icon/icon_arrow-39Iy0A.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_coins.png"
+          ],
+          "src": [
+            "icon/icon_coins-NqE1yg.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_duck.png"
+          ],
+          "src": [
+            "icon/icon_duck-QPAmBw.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_gift.png"
+          ],
+          "src": [
+            "icon/icon_gift-JMQ7Ig.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_heart.png"
+          ],
+          "src": [
+            "icon/icon_heart-kIRcAw.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_home.png"
+          ],
+          "src": [
+            "icon/icon_home-k-34AQ.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_lock.png"
+          ],
+          "src": [
+            "icon/icon_lock-qOKFSw.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_music.png"
+          ],
+          "src": [
+            "icon/icon_music-IBWQkA.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_play.png"
+          ],
+          "src": [
+            "icon/icon_play-oOKY1A.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_radio.png"
+          ],
+          "src": [
+            "icon/icon_radio-SFe9HA.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_replay.png"
+          ],
+          "src": [
+            "icon/icon_replay-MDSwPg.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_settings.png"
+          ],
+          "src": [
+            "icon/icon_settings-tEIR_g.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_sound.png"
+          ],
+          "src": [
+            "icon/icon_sound-6OX5pQ.png"
+          ]
+        },
+        {
+          "alias": [
+            "icon/icon_start.png"
+          ],
+          "src": [
+            "icon/icon_start-7Y7niQ.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loading",
+      "assets": [
+        {
+          "alias": [
+            "loading"
+          ],
+          "src": [
+            "loading-9_C2ZQ@0.5x.png.json",
+            "loading-_ydteQ.png.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "assets": [
+        {
+          "alias": [
+            "main/spines/character/character.atlas"
+          ],
+          "src": [
+            "main/spines/character/character-kGrnIg.png.atlas"
+          ]
+        },
+        {
+          "alias": [
+            "main/spines/character/character.png"
+          ],
+          "src": [
+            "main/spines/character/character-kuQDiA.png"
+          ]
+        },
+        {
+          "alias": [
+            "main/spines/character/character.skel"
+          ],
+          "src": [
+            "main/spines/character/character-3ueLVg.skel"
+          ]
+        },
+        {
+          "alias": [
+            "main/sprite_sheet/knight"
+          ],
+          "src": [
+            "main/sprite_sheet/knight-S_gBQw.png.json",
+            "main/sprite_sheet/knight-FNP4FQ@0.5x.png.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sounds",
+      "assets": [
+        {
+          "alias": [
+            "sounds/music/background.ogg"
+          ],
+          "src": [
+            "sounds/music/background-51N0Sw.ogg"
+          ]
+        },
+        {
+          "alias": [
+            "sounds/sfx/btn_click.ogg"
+          ],
+          "src": [
+            "sounds/sfx/btn_click-Pj3-vg.ogg"
+          ]
+        },
+        {
+          "alias": [
+            "sounds/sfx/impactPlate_light_000.ogg"
+          ],
+          "src": [
+            "sounds/sfx/impactPlate_light_000-P1IavQ.ogg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tiles",
+      "assets": [
+        {
+          "alias": [
+            "tiles"
+          ],
+          "src": [
+            "tiles-Ssz04A@0.5x.png.json",
+            "tiles-gqhGvw.png.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "title-scene",
+      "assets": [
+        {
+          "alias": [
+            "title-scene"
+          ],
+          "src": [
+            "title-scene-q5rOdw@0.5x.png.json",
+            "title-scene-7tvbPA.png.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ui",
+      "assets": [
+        {
+          "alias": [
+            "ui/buttons"
+          ],
+          "src": [
+            "ui/buttons-wI3s@0.5x.png.json",
+            "ui/buttons-jPPwBg.png.json"
+          ]
+        },
+        {
+          "alias": [
+            "ui/font/Gluten-Regular.ttf"
+          ],
+          "src": [
+            "ui/font/Gluten-Regular-MPnD.woff2"
+          ]
+        },
+        {
+          "alias": [
+            "ui/font/Kenney Future.ttf"
+          ],
+          "src": [
+            "ui/font/Kenney Future-tKEBRw.woff2"
+          ]
+        },
+        {
+          "alias": [
+            "ui/icon"
+          ],
+          "src": [
+            "ui/icon-yJfzmA@0.5x.png.json",
+            "ui/icon-70kt3A.png.json"
+          ]
+        },
+        {
+          "alias": [
+            "ui/image"
+          ],
+          "src": [
+            "ui/image-pRjX0A@0.5x.png.json",
+            "ui/image-bLZkOw.png.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
