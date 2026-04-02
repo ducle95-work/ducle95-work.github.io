@@ -433,6 +433,20 @@
       ]
     },
     {
+      "name": "spell_icon",
+      "assets": [
+        {
+          "alias": [
+            "spell_icon"
+          ],
+          "src": [
+            "spell_icon-wpvJkQ@0.5x.png.json",
+            "spell_icon-W8VMoA.png.json"
+          ]
+        }
+      ]
+    },
+    {
       "name": "tiles",
       "assets": [
         {
