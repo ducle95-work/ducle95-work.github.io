@@ -146,6 +146,38 @@
         },
         {
           "alias": [
+            "aseprite/effect/stylized_explosion_001_large_yellow.json"
+          ],
+          "src": [
+            "aseprite/effect/stylized_explosion_001_large_yellow.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/stylized_explosion_001_large_yellow.png"
+          ],
+          "src": [
+            "aseprite/effect/stylized_explosion_001_large_yellow.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/WaterEffect.json"
+          ],
+          "src": [
+            "aseprite/effect/WaterEffect.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/effect/WaterEffect.png"
+          ],
+          "src": [
+            "aseprite/effect/WaterEffect.png"
+          ]
+        },
+        {
+          "alias": [
             "aseprite/enemy/fire_totem.json"
           ],
           "src": [
@@ -162,50 +194,50 @@
         },
         {
           "alias": [
-            "aseprite/knight2d/knight2d.json"
+            "aseprite/enemy_simple/knight2d.json"
           ],
           "src": [
-            "aseprite/knight2d/knight2d.json"
+            "aseprite/enemy_simple/knight2d.json"
           ]
         },
         {
           "alias": [
-            "aseprite/knight2d/knight2d.png"
+            "aseprite/enemy_simple/knight2d.png"
           ],
           "src": [
-            "aseprite/knight2d/knight2d.png"
+            "aseprite/enemy_simple/knight2d.png"
           ]
         },
         {
           "alias": [
-            "aseprite/orc/Orc.json"
+            "aseprite/enemy_simple/Orc.json"
           ],
           "src": [
-            "aseprite/orc/Orc.json"
+            "aseprite/enemy_simple/Orc.json"
           ]
         },
         {
           "alias": [
-            "aseprite/orc/Orc.png"
+            "aseprite/enemy_simple/Orc.png"
           ],
           "src": [
-            "aseprite/orc/Orc.png"
+            "aseprite/enemy_simple/Orc.png"
           ]
         },
         {
           "alias": [
-            "aseprite/soldier/Soldier.json"
+            "aseprite/enemy_simple/Soldier.json"
           ],
           "src": [
-            "aseprite/soldier/Soldier.json"
+            "aseprite/enemy_simple/Soldier.json"
           ]
         },
         {
           "alias": [
-            "aseprite/soldier/Soldier.png"
+            "aseprite/enemy_simple/Soldier.png"
           ],
           "src": [
-            "aseprite/soldier/Soldier.png"
+            "aseprite/enemy_simple/Soldier.png"
           ]
         },
         {
@@ -214,22 +246,6 @@
           ],
           "src": [
             "aseprite/soldier-arrow.png"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.json"
-          ],
-          "src": [
-            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.json"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.png"
-          ],
-          "src": [
-            "aseprite/stylized_explosion_001_large_yellow/stylized_explosion_001_large_yellow.png"
           ]
         }
       ]
