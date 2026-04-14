@@ -26,30 +26,6 @@
           "src": [
             "fonts/PressStart2P-Regular-KC3dTA.woff2"
           ]
-        },
-        {
-          "alias": [
-            "images/circle.png"
-          ],
-          "src": [
-            "images/circle-0mklfw.png"
-          ]
-        },
-        {
-          "alias": [
-            "images/hexagon.png"
-          ],
-          "src": [
-            "images/hexagon-7SHV6A.png"
-          ]
-        },
-        {
-          "alias": [
-            "images/seamless.png"
-          ],
-          "src": [
-            "images/seamless-M4KZhA.png"
-          ]
         }
       ]
     },
@@ -82,6 +58,70 @@
         },
         {
           "alias": [
+            "aseprite/Construct/DeadCoffin.json"
+          ],
+          "src": [
+            "aseprite/Construct/DeadCoffin.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/DeadCoffin.png"
+          ],
+          "src": [
+            "aseprite/Construct/DeadCoffin.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/DeadHouse.json"
+          ],
+          "src": [
+            "aseprite/Construct/DeadHouse.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/DeadHouse.png"
+          ],
+          "src": [
+            "aseprite/Construct/DeadHouse.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/DeadPillar.json"
+          ],
+          "src": [
+            "aseprite/Construct/DeadPillar.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/DeadPillar.png"
+          ],
+          "src": [
+            "aseprite/Construct/DeadPillar.png"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/Tower.json"
+          ],
+          "src": [
+            "aseprite/Construct/Tower.json"
+          ]
+        },
+        {
+          "alias": [
+            "aseprite/Construct/Tower.png"
+          ],
+          "src": [
+            "aseprite/Construct/Tower.png"
+          ]
+        },
+        {
+          "alias": [
             "aseprite/effect/lightning_strike_001_large_violet.json"
           ],
           "src": [
@@ -374,171 +414,6 @@
           ],
           "src": [
             "aseprite/TinyRPGCharacter/KnightTemplar.png"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadCoffin.json"
-          ],
-          "src": [
-            "aseprite/Undead/DeadCoffin.json"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadCoffin.png"
-          ],
-          "src": [
-            "aseprite/Undead/DeadCoffin.png"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadHouse.json"
-          ],
-          "src": [
-            "aseprite/Undead/DeadHouse.json"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadHouse.png"
-          ],
-          "src": [
-            "aseprite/Undead/DeadHouse.png"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadPillar.json"
-          ],
-          "src": [
-            "aseprite/Undead/DeadPillar.json"
-          ]
-        },
-        {
-          "alias": [
-            "aseprite/Undead/DeadPillar.png"
-          ],
-          "src": [
-            "aseprite/Undead/DeadPillar.png"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "icon",
-      "assets": [
-        {
-          "alias": [
-            "icon/icon_arrow.png"
-          ],
-          "src": [
-            "icon/icon_arrow-39Iy0A.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_coins.png"
-          ],
-          "src": [
-            "icon/icon_coins-NqE1yg.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_duck.png"
-          ],
-          "src": [
-            "icon/icon_duck-QPAmBw.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_gift.png"
-          ],
-          "src": [
-            "icon/icon_gift-JMQ7Ig.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_heart.png"
-          ],
-          "src": [
-            "icon/icon_heart-kIRcAw.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_home.png"
-          ],
-          "src": [
-            "icon/icon_home-k-34AQ.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_lock.png"
-          ],
-          "src": [
-            "icon/icon_lock-qOKFSw.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_music.png"
-          ],
-          "src": [
-            "icon/icon_music-IBWQkA.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_play.png"
-          ],
-          "src": [
-            "icon/icon_play-oOKY1A.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_radio.png"
-          ],
-          "src": [
-            "icon/icon_radio-SFe9HA.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_replay.png"
-          ],
-          "src": [
-            "icon/icon_replay-MDSwPg.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_settings.png"
-          ],
-          "src": [
-            "icon/icon_settings-tEIR_g.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_sound.png"
-          ],
-          "src": [
-            "icon/icon_sound-6OX5pQ.png"
-          ]
-        },
-        {
-          "alias": [
-            "icon/icon_start.png"
-          ],
-          "src": [
-            "icon/icon_start-7Y7niQ.png"
           ]
         }
       ]
@@ -558,52 +433,14 @@
       ]
     },
     {
-      "name": "main",
-      "assets": [
-        {
-          "alias": [
-            "main/spines/character/character.atlas"
-          ],
-          "src": [
-            "main/spines/character/character-kGrnIg.png.atlas"
-          ]
-        },
-        {
-          "alias": [
-            "main/spines/character/character.png"
-          ],
-          "src": [
-            "main/spines/character/character-kuQDiA.png"
-          ]
-        },
-        {
-          "alias": [
-            "main/spines/character/character.skel"
-          ],
-          "src": [
-            "main/spines/character/character-3ueLVg.skel"
-          ]
-        },
-        {
-          "alias": [
-            "main/sprite_sheet/knight"
-          ],
-          "src": [
-            "main/sprite_sheet/knight-S_gBQw.png.json",
-            "main/sprite_sheet/knight-FNP4FQ@0.5x.png.json"
-          ]
-        }
-      ]
-    },
-    {
       "name": "sounds",
       "assets": [
         {
           "alias": [
-            "sounds/music/background.ogg"
+            "sounds/music/background.mp3"
           ],
           "src": [
-            "sounds/music/background-51N0Sw.ogg"
+            "sounds/music/background-sinXoQ.mp3"
           ]
         },
         {
@@ -616,10 +453,10 @@
         },
         {
           "alias": [
-            "sounds/sfx/impactPlate_light_000.ogg"
+            "sounds/sfx/ranger-attack.ogg"
           ],
           "src": [
-            "sounds/sfx/impactPlate_light_000-P1IavQ.ogg"
+            "sounds/sfx/ranger-attack-P1IavQ.ogg"
           ]
         }
       ]
@@ -634,20 +471,6 @@
           "src": [
             "spell_icon-wpvJkQ@0.5x.png.json",
             "spell_icon-W8VMoA.png.json"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "tiles",
-      "assets": [
-        {
-          "alias": [
-            "tiles"
-          ],
-          "src": [
-            "tiles-Ssz04A@0.5x.png.json",
-            "tiles-gqhGvw.png.json"
           ]
         }
       ]
@@ -714,20 +537,6 @@
       ]
     },
     {
-      "name": "title-scene",
-      "assets": [
-        {
-          "alias": [
-            "title-scene"
-          ],
-          "src": [
-            "title-scene-q5rOdw@0.5x.png.json",
-            "title-scene-7tvbPA.png.json"
-          ]
-        }
-      ]
-    },
-    {
       "name": "ui",
       "assets": [
         {
@@ -769,8 +578,8 @@
             "ui/image"
           ],
           "src": [
-            "ui/image-pRjX0A@0.5x.png.json",
-            "ui/image-bLZkOw.png.json"
+            "ui/image-ojNL5g.png.json",
+            "ui/image-GhNWjA@0.5x.png.json"
           ]
         }
       ]
