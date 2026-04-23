@@ -1,0 +1,22 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": []
+    },
+    {
+      "name": "loading",
+      "assets": [
+        {
+          "alias": [
+            "loading"
+          ],
+          "src": [
+            "loading-9_C2ZQ@0.5x.png.json",
+            "loading-_ydteQ.png.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
